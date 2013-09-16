@@ -9,11 +9,33 @@
 #import "NGAppDelegate.h"
 
 #import "NGViewController.h"
+#import "NGContext.h"
+#import "NGList.h"
 
 @implementation NGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NGList *list = [NGList list];
+    
+    for (int i = 0; i < 100; ++i) {
+        [list addObject:@(i)];
+    }
+    
+    NSLog(@"%@", list);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[NGViewController alloc] initWithNibName:@"NGViewController" bundle:nil];

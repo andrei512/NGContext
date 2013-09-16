@@ -18,6 +18,9 @@
 		75E32F6F17E78CC90042F998 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E32F6E17E78CC90042F998 /* Default-568h@2x.png */; };
 		75E32F7217E78CC90042F998 /* NGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F7117E78CC90042F998 /* NGViewController.m */; };
 		75E32F7517E78CC90042F998 /* NGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75E32F7317E78CC90042F998 /* NGViewController.xib */; };
+		75E32F7D17E78CF30042F998 /* NGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F7C17E78CF30042F998 /* NGContext.m */; };
+		75E32F8017E78D290042F998 /* NGList.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F7F17E78D290042F998 /* NGList.m */; };
+		75E32F8317E7901D0042F998 /* NGFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F8217E7901D0042F998 /* NGFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,14 @@
 		75E32F7017E78CC90042F998 /* NGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGViewController.h; sourceTree = "<group>"; };
 		75E32F7117E78CC90042F998 /* NGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGViewController.m; sourceTree = "<group>"; };
 		75E32F7417E78CC90042F998 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NGViewController.xib; sourceTree = "<group>"; };
+		75E32F7B17E78CF30042F998 /* NGContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGContext.h; sourceTree = "<group>"; };
+		75E32F7C17E78CF30042F998 /* NGContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGContext.m; sourceTree = "<group>"; };
+		75E32F7E17E78D290042F998 /* NGList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGList.h; sourceTree = "<group>"; };
+		75E32F7F17E78D290042F998 /* NGList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGList.m; sourceTree = "<group>"; };
+		75E32F8117E7901D0042F998 /* NGFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGFilter.h; sourceTree = "<group>"; };
+		75E32F8217E7901D0042F998 /* NGFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGFilter.m; sourceTree = "<group>"; };
+		75E32F8417E792700042F998 /* NSObject+APIsA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+APIsA.h"; sourceTree = "<group>"; };
+		75E32F8517E792700042F998 /* NSObject+APIsA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+APIsA.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +94,20 @@
 		75E32F5E17E78CC90042F998 /* NGContext */ = {
 			isa = PBXGroup;
 			children = (
+				75E32F8417E792700042F998 /* NSObject+APIsA.h */,
+				75E32F8517E792700042F998 /* NSObject+APIsA.m */,
 				75E32F6717E78CC90042F998 /* NGAppDelegate.h */,
 				75E32F6817E78CC90042F998 /* NGAppDelegate.m */,
 				75E32F7017E78CC90042F998 /* NGViewController.h */,
 				75E32F7117E78CC90042F998 /* NGViewController.m */,
 				75E32F7317E78CC90042F998 /* NGViewController.xib */,
 				75E32F5F17E78CC90042F998 /* Supporting Files */,
+				75E32F7B17E78CF30042F998 /* NGContext.h */,
+				75E32F7C17E78CF30042F998 /* NGContext.m */,
+				75E32F7E17E78D290042F998 /* NGList.h */,
+				75E32F7F17E78D290042F998 /* NGList.m */,
+				75E32F8117E7901D0042F998 /* NGFilter.h */,
+				75E32F8217E7901D0042F998 /* NGFilter.m */,
 			);
 			path = NGContext;
 			sourceTree = "<group>";
@@ -177,6 +196,9 @@
 				75E32F6517E78CC90042F998 /* main.m in Sources */,
 				75E32F6917E78CC90042F998 /* NGAppDelegate.m in Sources */,
 				75E32F7217E78CC90042F998 /* NGViewController.m in Sources */,
+				75E32F7D17E78CF30042F998 /* NGContext.m in Sources */,
+				75E32F8017E78D290042F998 /* NGList.m in Sources */,
+				75E32F8317E7901D0042F998 /* NGFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
