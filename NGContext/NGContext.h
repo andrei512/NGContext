@@ -7,20 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+APIsA.h"
+
+@class NGSubscribedAction;
+@class NGEvent;
+
+typedef void(^NGEventBlock)(NGEvent *event);
 
 typedef enum {
-    NGResultNo = 0,
-    NGResultYes = 1,
-    NGResultBreak = -1,
-    NGResultContinue = -2    
+    NGNo = 0,
+    NGYes = 1,
+    NGBreak = -1,
+    NGContinue = -2    
 } NGResult;
 
-typedef NGResult(^NGAction)(NSObject *params);
-typedef NSObject *(^NGFilterAction)(id params);
+typedef NGResult(^NGAction)(NSObject *);
+typedef NSObject *(^NGFilterAction)(id);
 
 @interface NGContext : NSObject<NSFastEnumeration>
 
+@property (nonatomic, strong) NSMutableArray *subscribers;
+
 @property (nonatomic, strong) NSObject<NSFastEnumeration> *context;
+
+- (void)on:(NSObject *)event do:(NGEventBlock)action;
+- (void)post:(NGEvent *)event;
 
 @end

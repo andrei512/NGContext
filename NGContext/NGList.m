@@ -7,6 +7,7 @@
 //
 
 #import "NGList.h"
+#import "NGEvent.h"
 
 @implementation NGList
 
@@ -29,21 +30,43 @@
 
 - (void)addObject:(NSObject *)object {
     [self.context addObject:object];
+    [self post:[NGEvent eventNamed:@"add" info:@{ @"object" : object }]];
 }
 
 - (void)insertObject:(NSObject *)object atIndex:(int)index {
     [self.context insertObject:object atIndex:index];
+    [self post:[NGEvent eventNamed:@"insert"
+                              info:@{
+                    @"object" : object,
+                    @"index" : @(index)
+                }]];
 }
 
 - (void)removeObject:(NSObject *)object {
     [self.context removeObject:object];
+    [self post:[NGEvent eventNamed:@"remove"
+                              info:@{
+                    @"object" : object
+                }]];
 }
+
 - (void)removeObjectAtIndex:(int)index {
     [self.context removeObjectAtIndex:index];
+    [self post:[NGEvent eventNamed:@"remove"
+                              info:@{
+                    @"object" : self.context[index],
+                    @"index" : @(index)
+                }]];
 }
 
 - (void)replaceObjectAtIndex:(int)index withObject:(NSObject *)anObject {
     [self.context replaceObjectAtIndex:index withObject:anObject];
+    [self post:[NGEvent eventNamed:@"edit"
+                              info:@{
+                    @"object" : self.context[index],
+                    @"index" : @(index),
+                    @"new" : anObject
+                }]];
 }
 
 - (int)count {

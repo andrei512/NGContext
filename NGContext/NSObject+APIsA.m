@@ -12,8 +12,8 @@
 
 - (IsABlock)_is_a {
     __block NSObject *selfb = self;
-    return ^BOOL(Class class) {
-        return [selfb isKindOfClass:class];
+    return ^BOOL(Class className) {
+        return [selfb isKindOfClass:className];
     };
 }
 

@@ -11,18 +11,25 @@
 #import "NGViewController.h"
 #import "NGContext.h"
 #import "NGList.h"
+#import "NGEvent.h"
 
 @implementation NGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NGList *list = [NGList list];
+
+    [list on:@"add, remove" do:^(NGEvent *event) {
+        NSLog(@"YEY -> %@", event);
+    }];
     
     for (int i = 0; i < 100; ++i) {
         [list addObject:@(i)];
     }
     
-    NSLog(@"%@", list);
+    [list removeObject:@(33)];
+    
+//    NSLog(@"%@", list);
     
     
     

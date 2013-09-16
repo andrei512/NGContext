@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#define is_a(ClassName) _is_a([ClassName class])
+#define is_a(XX) _is_a([XX class])
 
-typedef BOOL(^IsABlock)(Class class);
+typedef BOOL(^IsABlock)(Class className);
 
 @interface NSObject (APIsA)
 
