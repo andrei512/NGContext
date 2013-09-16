@@ -9,11 +9,23 @@
 #import "NGAppDelegate.h"
 
 #import "NGViewController.h"
+#import "NGRepository.h"
+#import "NGListRepository.h"
+
+#define PO(x) NSLog(@"%s = %@", #x, (x));
 
 @implementation NGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NGListRepository *repo = [NGListRepository new];
+    
+    for (int i = 0; i < 10; ++i) {
+        [repo add:@(i)];
+    }
+    
+    PO(repo)
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[NGViewController alloc] initWithNibName:@"NGViewController" bundle:nil];

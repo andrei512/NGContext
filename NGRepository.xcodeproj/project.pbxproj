@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7566367817E739F7008A2E92 /* NGEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566366C17E739F7008A2E92 /* NGEvent.m */; };
+		7566367917E739F7008A2E92 /* NGItemSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566366E17E739F7008A2E92 /* NGItemSelector.m */; };
+		7566367A17E739F7008A2E92 /* NGRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566367017E739F7008A2E92 /* NGRepository.m */; };
+		7566367B17E739F7008A2E92 /* NGRepositoryAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566367217E739F7008A2E92 /* NGRepositoryAction.m */; };
+		7566367C17E739F7008A2E92 /* NGAnonymusRepositoryDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566367517E739F7008A2E92 /* NGAnonymusRepositoryDelegate.m */; };
+		7566367F17E73A14008A2E92 /* NGListRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566367E17E73A14008A2E92 /* NGListRepository.m */; };
 		75E32F1517E65CC70042F998 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E32F1417E65CC70042F998 /* UIKit.framework */; };
 		75E32F1717E65CC70042F998 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E32F1617E65CC70042F998 /* Foundation.framework */; };
 		75E32F1917E65CC70042F998 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E32F1817E65CC70042F998 /* CoreGraphics.framework */; };
@@ -18,15 +24,23 @@
 		75E32F2B17E65CC80042F998 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E32F2A17E65CC80042F998 /* Default-568h@2x.png */; };
 		75E32F2E17E65CC80042F998 /* NGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F2D17E65CC80042F998 /* NGViewController.m */; };
 		75E32F3117E65CC80042F998 /* NGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75E32F2F17E65CC80042F998 /* NGViewController.xib */; };
-		75E32F3B17E65D600042F998 /* NGRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F3A17E65D600042F998 /* NGRepository.m */; };
-		75E32F3E17E65D800042F998 /* NGRepositoryAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F3D17E65D800042F998 /* NGRepositoryAction.m */; };
-		75E32F4117E65D930042F998 /* NGItemSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F4017E65D930042F998 /* NGItemSelector.m */; };
-		75E32F4417E65DAD0042F998 /* NGEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F4317E65DAD0042F998 /* NGEvent.m */; };
-		75E32F4817E65ED60042F998 /* NGAnonymusRepositoryDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F4717E65ED60042F998 /* NGAnonymusRepositoryDelegate.m */; };
 		75E32F4B17E671870042F998 /* NSObject+APIsA.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F4A17E671870042F998 /* NSObject+APIsA.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7566366B17E739F7008A2E92 /* NGEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGEvent.h; sourceTree = "<group>"; };
+		7566366C17E739F7008A2E92 /* NGEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGEvent.m; sourceTree = "<group>"; };
+		7566366D17E739F7008A2E92 /* NGItemSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGItemSelector.h; sourceTree = "<group>"; };
+		7566366E17E739F7008A2E92 /* NGItemSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGItemSelector.m; sourceTree = "<group>"; };
+		7566366F17E739F7008A2E92 /* NGRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRepository.h; sourceTree = "<group>"; };
+		7566367017E739F7008A2E92 /* NGRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRepository.m; sourceTree = "<group>"; };
+		7566367117E739F7008A2E92 /* NGRepositoryAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRepositoryAction.h; sourceTree = "<group>"; };
+		7566367217E739F7008A2E92 /* NGRepositoryAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRepositoryAction.m; sourceTree = "<group>"; };
+		7566367417E739F7008A2E92 /* NGAnonymusRepositoryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGAnonymusRepositoryDelegate.h; sourceTree = "<group>"; };
+		7566367517E739F7008A2E92 /* NGAnonymusRepositoryDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGAnonymusRepositoryDelegate.m; sourceTree = "<group>"; };
+		7566367617E739F7008A2E92 /* NGRepositoryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRepositoryDelegate.h; sourceTree = "<group>"; };
+		7566367D17E73A14008A2E92 /* NGListRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGListRepository.h; sourceTree = "<group>"; };
+		7566367E17E73A14008A2E92 /* NGListRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGListRepository.m; sourceTree = "<group>"; };
 		75E32F1117E65CC70042F998 /* NGRepository.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGRepository.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E32F1417E65CC70042F998 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75E32F1617E65CC70042F998 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,17 +57,6 @@
 		75E32F2C17E65CC80042F998 /* NGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGViewController.h; sourceTree = "<group>"; };
 		75E32F2D17E65CC80042F998 /* NGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGViewController.m; sourceTree = "<group>"; };
 		75E32F3017E65CC80042F998 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NGViewController.xib; sourceTree = "<group>"; };
-		75E32F3917E65D600042F998 /* NGRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRepository.h; sourceTree = "<group>"; };
-		75E32F3A17E65D600042F998 /* NGRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRepository.m; sourceTree = "<group>"; };
-		75E32F3C17E65D800042F998 /* NGRepositoryAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRepositoryAction.h; sourceTree = "<group>"; };
-		75E32F3D17E65D800042F998 /* NGRepositoryAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRepositoryAction.m; sourceTree = "<group>"; };
-		75E32F3F17E65D930042F998 /* NGItemSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGItemSelector.h; sourceTree = "<group>"; };
-		75E32F4017E65D930042F998 /* NGItemSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGItemSelector.m; sourceTree = "<group>"; };
-		75E32F4217E65DAD0042F998 /* NGEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGEvent.h; sourceTree = "<group>"; };
-		75E32F4317E65DAD0042F998 /* NGEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGEvent.m; sourceTree = "<group>"; };
-		75E32F4517E65EB30042F998 /* NGRepositoryDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGRepositoryDelegate.h; sourceTree = "<group>"; };
-		75E32F4617E65ED50042F998 /* NGAnonymusRepositoryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGAnonymusRepositoryDelegate.h; sourceTree = "<group>"; };
-		75E32F4717E65ED60042F998 /* NGAnonymusRepositoryDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGAnonymusRepositoryDelegate.m; sourceTree = "<group>"; };
 		75E32F4917E671870042F998 /* NSObject+APIsA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+APIsA.h"; sourceTree = "<group>"; };
 		75E32F4A17E671870042F998 /* NSObject+APIsA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+APIsA.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +75,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7566366A17E739F7008A2E92 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7566366B17E739F7008A2E92 /* NGEvent.h */,
+				7566366C17E739F7008A2E92 /* NGEvent.m */,
+				7566366D17E739F7008A2E92 /* NGItemSelector.h */,
+				7566366E17E739F7008A2E92 /* NGItemSelector.m */,
+				7566366F17E739F7008A2E92 /* NGRepository.h */,
+				7566367017E739F7008A2E92 /* NGRepository.m */,
+				7566367117E739F7008A2E92 /* NGRepositoryAction.h */,
+				7566367217E739F7008A2E92 /* NGRepositoryAction.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7566367317E739F7008A2E92 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7566367417E739F7008A2E92 /* NGAnonymusRepositoryDelegate.h */,
+				7566367517E739F7008A2E92 /* NGAnonymusRepositoryDelegate.m */,
+				7566367617E739F7008A2E92 /* NGRepositoryDelegate.h */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7566367717E739F7008A2E92 /* ListRepository */ = {
+			isa = PBXGroup;
+			children = (
+				7566367D17E73A14008A2E92 /* NGListRepository.h */,
+				7566367E17E73A14008A2E92 /* NGListRepository.m */,
+			);
+			path = ListRepository;
+			sourceTree = "<group>";
+		};
 		75E32F0817E65CC70042F998 = {
 			isa = PBXGroup;
 			children = (
@@ -138,17 +175,9 @@
 		75E32F3817E65D4B0042F998 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				75E32F3917E65D600042F998 /* NGRepository.h */,
-				75E32F3A17E65D600042F998 /* NGRepository.m */,
-				75E32F3C17E65D800042F998 /* NGRepositoryAction.h */,
-				75E32F3D17E65D800042F998 /* NGRepositoryAction.m */,
-				75E32F3F17E65D930042F998 /* NGItemSelector.h */,
-				75E32F4017E65D930042F998 /* NGItemSelector.m */,
-				75E32F4217E65DAD0042F998 /* NGEvent.h */,
-				75E32F4317E65DAD0042F998 /* NGEvent.m */,
-				75E32F4517E65EB30042F998 /* NGRepositoryDelegate.h */,
-				75E32F4617E65ED50042F998 /* NGAnonymusRepositoryDelegate.h */,
-				75E32F4717E65ED60042F998 /* NGAnonymusRepositoryDelegate.m */,
+				7566366A17E739F7008A2E92 /* Base */,
+				7566367317E739F7008A2E92 /* Delegates */,
+				7566367717E739F7008A2E92 /* ListRepository */,
 				75E32F4917E671870042F998 /* NSObject+APIsA.h */,
 				75E32F4A17E671870042F998 /* NSObject+APIsA.m */,
 			);
@@ -225,12 +254,13 @@
 				75E32F2117E65CC70042F998 /* main.m in Sources */,
 				75E32F2517E65CC80042F998 /* NGAppDelegate.m in Sources */,
 				75E32F2E17E65CC80042F998 /* NGViewController.m in Sources */,
-				75E32F3B17E65D600042F998 /* NGRepository.m in Sources */,
-				75E32F3E17E65D800042F998 /* NGRepositoryAction.m in Sources */,
-				75E32F4117E65D930042F998 /* NGItemSelector.m in Sources */,
-				75E32F4417E65DAD0042F998 /* NGEvent.m in Sources */,
-				75E32F4817E65ED60042F998 /* NGAnonymusRepositoryDelegate.m in Sources */,
 				75E32F4B17E671870042F998 /* NSObject+APIsA.m in Sources */,
+				7566367817E739F7008A2E92 /* NGEvent.m in Sources */,
+				7566367917E739F7008A2E92 /* NGItemSelector.m in Sources */,
+				7566367A17E739F7008A2E92 /* NGRepository.m in Sources */,
+				7566367B17E739F7008A2E92 /* NGRepositoryAction.m in Sources */,
+				7566367C17E739F7008A2E92 /* NGAnonymusRepositoryDelegate.m in Sources */,
+				7566367F17E73A14008A2E92 /* NGListRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +383,7 @@
 				75E32F3617E65CC80042F998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

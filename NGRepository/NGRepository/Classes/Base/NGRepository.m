@@ -8,6 +8,7 @@
 
 #import "NGRepository.h"
 #import "NGRepositoryAction.h"
+#import "NGListRepository.h"
 
 @implementation NGRepository
 
@@ -15,25 +16,33 @@
     if (items.is_a(NGRepository)) {
         return (NGRepository *)items;
     } else if (items.is_a(NSArray)) {
-        return nil;
+        return [NGRepository repositoryWithList:(NSArray *)items];
     } else {
-        return nil;
+        return [NGRepository repositoryWithList:@[items]];
     }
 }
 
-- (void)add:(id)items {
++ (instancetype)repositoryWithList:(NSArray *)list {
+    NGRepository *repository = [NGRepository new];
+    
+    repository.container = list;
+    
+    return repository;
+}
+
+- (void)add:(NSObject *)items {
     for (NSObject<NGRepositoryDelegate> *delegate in self.delegates) {
         [delegate repository:self didAdd:[NGRepository repositoryWith:items]];
     }
 }
 
-- (void)remove:(id)items {
+- (void)remove:(NSObject *)items {
     for (NSObject<NGRepositoryDelegate> *delegate in self.delegates) {
         [delegate repository:self didRemove:[NGRepository repositoryWith:items]];
     }
 }
 
-- (void)edit:(id)items {
+- (void)edit:(NSObject *)items {
     for (NSObject<NGRepositoryDelegate> *delegate in self.delegates) {
         [delegate repository:self didEdit:[NGRepository repositoryWith:items]];
     }
@@ -71,6 +80,23 @@
     return 0;
 }
 
+- (void)addDelegate:(NSObject<NGRepositoryDelegate> *)delegate {
+    if (self.delegates == nil) {
+        self.delegates = [NGListRepository new];
+    }
+    [self.delegates add:delegate];
+}
+
+- (void)removeDelegate:(NSObject<NGRepositoryDelegate> *)delegate {
+    [self.delegates remove:delegate];
+}
+
+#pragma - description
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%p %@\n%@", self, NSStringFromClass(self.class), self.container];
+}
+
 #pragma - NSFastEnumeration
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state
@@ -87,6 +113,7 @@
     if ([self.container respondsToSelector:@selector(objectAtIndexedSubscript:)]) {
         return [(NGRepository *)self.container objectAtIndexedSubscript:idx];
     }
+    return nil;
 }
 
 - (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)idx {
@@ -96,11 +123,14 @@
 }
 
 - (id)objectForKeyedSubscript:(id <NSCopying>)key {
-    
+    // create itemSelector using predicates
+    return nil;
 }
 
 - (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key {
     
 }
+
+
 
 @end

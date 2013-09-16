@@ -20,6 +20,7 @@ typedef enum NGResult {
 
 typedef NGResult(^NGFilterBlock)(id item);
 typedef NGResult(^NGActionBlock)(id item);
+typedef NGResult(^NGEventBlock)(NGEvent *event);
 
 @interface NGRepository : NSObject<NSFastEnumeration>
 
@@ -27,10 +28,11 @@ typedef NGResult(^NGActionBlock)(id item);
 @property (nonatomic, strong) NSObject<NSFastEnumeration> *container;
 
 + (instancetype)repositoryWith:(NSObject *)items;
++ (instancetype)repositoryWithList:(NSArray *)list;
 
-- (void)add:(id)items;
-- (void)remove:(id)items;
-- (void)edit:(id)items;
+- (void)add:(NSObject *)items;
+- (void)remove:(NSObject *)items;
+- (void)edit:(NSObject *)items;
 
 - (void)did:(NGEvent *)event;
 - (void)perform:(NGRepositoryAction *)action;
@@ -38,6 +40,9 @@ typedef NGResult(^NGActionBlock)(id item);
 - (void)each:(NGActionBlock)action;
 
 - (int)count;
+
+- (void)addDelegate:(NSObject<NGRepositoryDelegate> *)delegate;
+- (void)removeDelegate:(NSObject<NGRepositoryDelegate> *)delegate;
 
 // DSL
 - (id)objectAtIndexedSubscript:(NSUInteger)idx;
