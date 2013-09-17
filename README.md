@@ -6,6 +6,12 @@ Next Generation Container
 
 ## NGList
 
+Example uses:
+- use it as the data source of a table view to create a general pourpuse table view controller
+- live filters
+- decorators
+- components
+
 ``` objective-c
     NGList *list = [NGList list];
 
@@ -46,3 +52,8 @@ Next Generation Container
     object = 33;
 }
 ```
+
+## NGHash
+
+## NGTree
+
