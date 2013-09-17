@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		750D0B4A17E7BDC300142886 /* NSObject+APIsA.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E32F8517E792700042F998 /* NSObject+APIsA.m */; };
+		750D0B4F17E8FBB400142886 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 750D0B4E17E8FBB400142886 /* Human.m */; };
+		750D0B5217E8FC7B00142886 /* HumanColapse.m in Sources */ = {isa = PBXBuildFile; fileRef = 750D0B5117E8FC7B00142886 /* HumanColapse.m */; };
 		75E32F5917E78CC90042F998 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E32F5817E78CC90042F998 /* UIKit.framework */; };
 		75E32F5B17E78CC90042F998 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E32F5A17E78CC90042F998 /* Foundation.framework */; };
 		75E32F5D17E78CC90042F998 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E32F5C17E78CC90042F998 /* CoreGraphics.framework */; };
@@ -28,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750D0B4D17E8FBB400142886 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		750D0B4E17E8FBB400142886 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		750D0B5017E8FC7B00142886 /* HumanColapse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanColapse.h; sourceTree = "<group>"; };
+		750D0B5117E8FC7B00142886 /* HumanColapse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanColapse.m; sourceTree = "<group>"; };
 		75E32F5517E78CC90042F998 /* NGContext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGContext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E32F5817E78CC90042F998 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75E32F5A17E78CC90042F998 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,6 +80,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		750D0B4C17E8FB9F00142886 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				750D0B4D17E8FBB400142886 /* Human.h */,
+				750D0B4E17E8FBB400142886 /* Human.m */,
+				750D0B5017E8FC7B00142886 /* HumanColapse.h */,
+				750D0B5117E8FC7B00142886 /* HumanColapse.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		75E32F4C17E78CC90042F998 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +121,7 @@
 		75E32F5E17E78CC90042F998 /* NGContext */ = {
 			isa = PBXGroup;
 			children = (
+				750D0B4C17E8FB9F00142886 /* Models */,
 				75E32F8417E792700042F998 /* NSObject+APIsA.h */,
 				75E32F8517E792700042F998 /* NSObject+APIsA.m */,
 				75E32F6717E78CC90042F998 /* NGAppDelegate.h */,
@@ -236,6 +254,8 @@
 				75E32F8B17E7A1200042F998 /* NGItemSelector.m in Sources */,
 				75E32F8E17E7AECF0042F998 /* NGSubscribedAction.m in Sources */,
 				750D0B4A17E7BDC300142886 /* NSObject+APIsA.m in Sources */,
+				750D0B4F17E8FBB400142886 /* Human.m in Sources */,
+				750D0B5217E8FC7B00142886 /* HumanColapse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

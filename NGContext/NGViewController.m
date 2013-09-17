@@ -7,6 +7,7 @@
 //
 
 #import "NGViewController.h"
+#import "Human.h"
 
 @interface NGViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [Human createWithName:@"name"];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

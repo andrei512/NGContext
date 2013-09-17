@@ -32,20 +32,12 @@
     [list removeObject:@3];
     
     
-//    NSLog(@"%@", list);
     
-    /*kode\
-     first kode
-      */
-
-    /*kode\
-     second kode
-      */
+    /*kode/
+    */
+                                                                                                                                                            NSLog(@"hidden code!");
     
-    /*kode\
-     third kode
-      */
-    
+    /*jeg*/
     
     
     

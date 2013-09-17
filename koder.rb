@@ -40,10 +40,16 @@ def tokenized_kode source_kode
 		if token == :begin_kode
 			temp = ""
 		elsif token == :end_kode
-			new_tokens << {
-				:kode => temp
-			}
-			temp = nil
+			if temp != nil
+				new_tokens << {
+					:kode => temp
+				}
+				temp = nil
+			else 
+				new_tokens << {
+					:code => "*/"
+				}	
+			end
 		elsif temp != nil
 			temp = temp + token
 		else
@@ -68,7 +74,7 @@ def detokenize_kode tokens
 		elsif token[:kode]
 			"/*kode#{token[:kode]}*/"
 		else
-			"/* Koder error !!*/"
+			""
 		end				
 	}.join
 end
