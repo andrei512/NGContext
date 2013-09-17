@@ -19,15 +19,18 @@
 {
     NGList *list = [NGList list];
 
-    [list on:@"add, remove" do:^(NGEvent *event) {
-        NSLog(@"YEY -> %@", event);
+    [list on:nil do:^(NGEvent *event) {
+        NSLog(@"%@", event);
     }];
     
-    for (int i = 0; i < 100; ++i) {
-        [list addObject:@(i)];
+    [list post:@"Hello World!"];
+    
+    for (int i = 0; i < 10; ++i) {
+        [list insertObject:@(10-i) atIndex:i];
     }
     
-    [list removeObject:@(33)];
+    [list removeObject:@3];
+    
     
 //    NSLog(@"%@", list);
     
@@ -79,3 +82,7 @@
 }
 
 @end
+
+// koded ;)
+
+// koded ;)

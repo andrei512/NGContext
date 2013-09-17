@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-#define is_a(XX) _is_a([XX class])
 
 typedef BOOL(^IsABlock)(Class className);
+
+#define is_a(XX) _is_a([XX class])
 
 @interface NSObject (APIsA)
 
 - (IsABlock)_is_a;
 
 @end
+
+// koded ;)
+
+// koded ;)

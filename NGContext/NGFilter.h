@@ -17,3 +17,7 @@
 - (NSObject *)filter:(NSObject *)object;
 
 @end
+
+// koded ;)
+
+// koded ;)

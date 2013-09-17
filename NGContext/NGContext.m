@@ -22,22 +22,34 @@
     return self;
 }
 
-- (void)on:(NSObject *)event do:(NGEventBlock)action {
-    if (event.is_a(NGEvent) == YES) {
-        [NGSubscribedAction subscribedAction:action
-                                         for:(NGEvent *)event
-                                   inContext:self];
+- (NGSubscribedAction *)on:(NSObject *)event do:(NGEventBlock)action {
+    if (event == nil) {
+        return [NGSubscribedAction subscribedAction:action
+                                                for:[NGEvent new]
+                                          inContext:self];
+    } else if (event.is_a(NGEvent) == YES) {
+        return [NGSubscribedAction subscribedAction:action
+                                                for:(NGEvent *)event
+                                          inContext:self];
     } else if (event.is_a(NSString) == YES) {
-        [NGSubscribedAction subscribedAction:action
-                                         for:[NGEvent eventNamed:(NSString *)event]
-                                   inContext:self];
+        return [NGSubscribedAction subscribedAction:action
+                                                for:[NGEvent eventNamed:(NSString *)event]
+                                          inContext:self];
     }
+    return nil;
 }
 
-- (void)post:(NGEvent *)event {
-    for (NGSubscribedAction *subscribedAction in self.subscribers) {
-        if ([event matchesEvent:subscribedAction.event]) {
-            subscribedAction.action(event);
+- (void)post:(NSObject *)eventObject {
+    if (eventObject != nil) {
+        NGEvent *event =
+            eventObject.is_a(NGEvent) ?
+                (NGEvent *)eventObject :
+                [NGEvent eventNamed:(NSString *)eventObject];
+        
+        for (NGSubscribedAction *subscribedAction in self.subscribers) {
+            if ([event matchesEvent:subscribedAction.event]) {
+                subscribedAction.action(event);
+            }
         }
     }
 }
@@ -57,3 +69,7 @@
 
 
 @end
+
+// koded ;)
+
+// koded ;)

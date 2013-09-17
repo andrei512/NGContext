@@ -29,7 +29,11 @@ typedef NSObject *(^NGFilterAction)(id);
 
 @property (nonatomic, strong) NSObject<NSFastEnumeration> *context;
 
-- (void)on:(NSObject *)event do:(NGEventBlock)action;
-- (void)post:(NGEvent *)event;
+- (NGSubscribedAction *)on:(NSObject *)event do:(NGEventBlock)action;
+- (void)post:(NSObject *)event;
 
 @end
+
+// koded ;)
+
+// koded ;)
