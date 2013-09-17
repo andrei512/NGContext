@@ -22,3 +22,5 @@ typedef BOOL(^IsABlock)(Class className);
 // koded ;)
 
 // koded ;)
+
+// crafted by Koder www.koder-tools.com

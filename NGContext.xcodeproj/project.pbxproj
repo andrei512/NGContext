@@ -149,10 +149,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75E32F7817E78CC90042F998 /* Build configuration list for PBXNativeTarget "NGContext" */;
 			buildPhases = (
+				750D0B4B17E8D74200142886 /* ShellScript */,
 				75E32F5117E78CC90042F998 /* Sources */,
 				75E32F5217E78CC90042F998 /* Frameworks */,
 				75E32F5317E78CC90042F998 /* Resources */,
-				750D0B4B17E8D74200142886 /* ShellScript */,
 			);
 			buildRules = (
 			);

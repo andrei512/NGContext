@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-echo -e "`cat $1`" > $1
+echo -e "`ruby koder.rb $1`" > $1
 
 echo -e "`cat $1`"
